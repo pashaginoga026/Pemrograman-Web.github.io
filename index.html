@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Web | Pasha</title>
+    
+    <style>
+               body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fcfcfc;
+        }
+
+               header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 10px;
+        }
+        .logo { font-weight: bold; font-size: 1.5em; }
+        .logo-highlight { color: #0056b3; }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+        }
+
+        hr { border: 0; border-bottom: 1px solid #ddd; margin: 30px 0; }
+
+              .tombol-primer, .tombol-sekunder {
+            display: inline-block;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 10px;
+            margin-right: 10px;
+            font-size: 0.9em;
+        }
+        .tombol-primer { background-color: #0056b3; color: white; border: none; cursor: pointer; }
+        .tombol-sekunder { background-color: #e0e0e0; color: #333; }
+
+              .grid-gallery {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .grid-gallery img {
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+       
+        .kartu-blog {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        .kartu-blog h3 { margin-top: 0; }
+        .sumber-blog { font-size: 0.8em; color: #777; font-style: italic; }
+
+       
+        .grup-input input, .grup-input textarea {
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+
+               .kontak-medsos {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px dashed #ccc;
+            max-width: 500px;
+        }
+        .link-medsos {
+            display: inline-block;
+            margin-right: 20px;
+            text-decoration: none;
+            color: #0056b3;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .link-medsos:hover {
+            text-decoration: underline;
+            color: #004494;
+        }
+
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 0.9em;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Portfol<span class="logo-highlight">io.</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <section id="home">
+        <div class="teks-hero">
+            <p>Hi, Guys!</p>
+            <h1>I'M PASHA GINOGA</h1>
+            <h3>Mahasiswa Teknik Informatika</h3>
+            <p>
+                Saya adalah mahasiswa semester 4 di Fakultas Teknik UNSRAT. Memiliki minat pada 
+                dunia pengembangan perangkat lunak (Software Engineering) dan sangat antusias dalam mengeksplorasi teknologi terbaru.
+            </p>
+            <a href="#contact" class="tombol-primer">Hubungi Saya</a>
+            <a href="#gallery" class="tombol-sekunder">Lihat Gallery</a>
+        </div>
+        
+        <br>
+
+        <div class="foto-hero">
+            <img src="./gokil.jpg" alt="Foto Profil Pasha" width="300" style="border-radius: 8px;">
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="gallery">
+        <h2 class="judul-section">My Gallery</h2>
+        
+        <div class="grid-gallery">
+            <img src="./ya.jpg" alt="Gallery 1" width="300">
+            <img src="./sstt.jpg" alt="Gallery 2" width="300">
+            <img src="./sikma.jpg" alt="Gallery 3" width="300">
+            <img src="./super sigma.jpg" alt="Gallery 3" width="300">
+
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="blog">
+        <h2 class="judul-section">Tech Blog & Articles</h2>
+        
+        <div class="container-blog">
+            
+            <article class="kartu-blog">
+                <h3>Apa itu Machine Learning? (Konsep & Cara Kerja)</h3>
+                <p class="sumber-blog">Sumber: Dicoding Blog</p>
+                <p>Artikel dari Dicoding ini membahas tuntas konsep dasar Machine Learning. Kamu akan belajar bagaimana sebuah mesin bisa 'belajar' dari kumpulan data tanpa harus diprogram secara spesifik, serta melihat langsung contoh penerapannya di dunia nyata seperti pada algoritma rekomendasi Netflix dan asisten virtual.</p>
+                <a href="https://www.dicoding.com/blog/machine-learning-adalah/" target="_blank" style="text-decoration: none; color: #0056b3; font-weight: bold;">Baca Selengkapnya &rarr;</a>
+            </article>
+
+            <article class="kartu-blog">
+                <h3>Tutorial HTML untuk Pemula</h3>
+                <p class="sumber-blog">Sumber: Petani Kode</p>
+                <p>Belajar HTML dasar dari Nol. Pahami tag-tag esensial yang sering dipakai. Lalu buat sendiri websitemu dengan HTML. Selamat Belajar!</p>
+                <a href="https://www.petanikode.com/tutorial/html/" target="_blank" style="text-decoration: none; color: #0056b3; font-weight: bold;">Baca Selengkapnya &rarr;</a>
+            </article>
+
+            <article class="kartu-blog">
+                <h3>Roadmap Lengkap Menjadi Front-End Developer</h3>
+                <p class="sumber-blog">Sumber: Roadmap.sh</p>
+                <p>Bingung mau mulai belajar Web Development dari mana? Artikel dan panduan visual interaktif dari Roadmap.sh ini memberikan rute langkah demi langkah teknologi apa saja yang harus kamu kuasai. Mulai dari pemahaman dasar HTML/CSS, JavaScript, hingga memilih framework modern seperti React atau Vue.</p>
+                <a href="https://roadmap.sh/frontend" target="_blank" style="text-decoration: none; color: #0056b3; font-weight: bold;">Baca Selengkapnya &rarr;</a>
+            </article>
+
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="contact">
+        <h2 class="judul-section">Contact Me</h2>
+        
+        <form action="#" method="POST">
+            <div class="grup-input">
+                <label for="nama">Nama Lengkap:</label><br>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda..." required>
+            </div>
+            <div class="grup-input">
+                <label for="email">Alamat Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+            </div>
+            <div class="grup-input">
+                <label for="pesan">Pesan:</label><br>
+                <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+            </div>
+            <br>
+            <button type="submit" class="tombol-primer">Kirim Pesan</button>
+        </form>
+
+        <div class="kontak-medsos">
+            <p style="margin-bottom: 10px; color: #555;">Atau temukan saya di:</p>
+            <a href="https://github.com/pashaginoga026/Pemrograman-Web" target="_blank" class="link-medsos">🐙 GitHub</a>
+        </div>
+
+    </section>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 - Web Portofolio HTML5.</p>
+    </footer>
+
+</body>
+</html>
